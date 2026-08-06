@@ -270,7 +270,7 @@ export default function StoryCameraFullscreen({
           sx={{
             position: "fixed",
             inset: 0,
-            zIndex: 2200,
+            zIndex: 3200,
             background:
               "radial-gradient(circle at top, rgba(0,255,136,0.12) 0%, rgba(0,0,0,0.92) 40%, rgba(0,0,0,0.98) 100%)",
             display: "flex",
