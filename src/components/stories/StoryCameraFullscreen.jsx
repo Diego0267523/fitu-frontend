@@ -260,7 +260,7 @@ export default function StoryCameraFullscreen({
 
   const handleUseMedia = useCallback(() => {
     if (!capturedFile) return;
-    onCapture?.(capturedFile, { autoUpload: true });
+    onCapture?.(capturedFile, { autoUpload: false });
   }, [capturedFile, onCapture]);
 
   return (
