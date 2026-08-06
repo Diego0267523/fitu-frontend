@@ -270,7 +270,7 @@ export async function uploadStoryMedia({ file, caption = "", onUploadProgress })
   const formData = new FormData();
 
   formData.append("image", preparedFile, preparedFile.name);
-  formData.append("media", preparedFile, preparedFile.name);
+  
   formData.append(
     "mediaType",
     preparedFile?.type?.startsWith("video/") ? "video" : "image"
