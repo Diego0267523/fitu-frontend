@@ -287,7 +287,7 @@ const handleStoryUploadError = useCallback((_error, optimisticId) => {
 }, []);
 
 const handleOpenStoryCreator = useCallback((options = {}) => {
-  const { facingMode = "environment", proCamera = false } = options;
+  const { facingMode = "environment", proCamera = true } = options;
   setShowCreateStory(true);
 
   if (proCamera) {
