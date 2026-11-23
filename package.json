@@ -1,6 +1,10 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
+  "name": "fitu-frontend",
+  "version": "1.0.0",
+  "description": "Cliente web y Android (Capacitor) de FitU, app de fitness social",
+  "license": "MIT",
+  "author": "Diego Camacho",
+  "repository": {"type": "git", "url": "git+https://github.com/Diego0267523/frontend.git"},
   "private": true,
   "dependencies": {
     "@capacitor/android": "^8.3.0",

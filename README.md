@@ -1,7 +1,9 @@
-# 💪 Gym App — Frontend
+# 💪 FitU — Frontend
 
 Cliente web y móvil (Android) de una app de fitness social: feed, stories, perfiles públicos, chat con asistente de IA, mensajes directos y registro de comidas.
 
+[![CI](https://github.com/Diego0267523/frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/Diego0267523/frontend/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![MUI](https://img.shields.io/badge/Material_UI-7-007FFF?logo=mui&logoColor=white)
 ![Capacitor](https://img.shields.io/badge/Capacitor-Android-119EFF?logo=capacitor&logoColor=white)
@@ -55,3 +57,23 @@ src/
 docs/             # Documentación de perfiles públicos
 android/          # Proyecto nativo (Capacitor)
 ```
+
+## 📱 App Android
+
+```bash
+npm run build
+npx cap sync android
+npx cap open android   # abre el proyecto en Android Studio
+```
+
+El identificador de la app es `com.fitu.app` (ver `capacitor.config.ts`).
+
+## ⚙️ Configuración
+
+| Variable | Por defecto | Descripción |
+|---|---|---|
+| `REACT_APP_API_URL` | API desplegada en Render | URL base de la API. En desarrollo local usa `http://localhost:9090`. |
+
+## 📄 Licencia
+
+[MIT](LICENSE)

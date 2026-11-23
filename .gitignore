@@ -31,3 +31,8 @@ yarn-error.log*
 *.keystore
 *.jks
 .env
+
+# IDE
+/android/.idea
+.idea/
+.vscode/
