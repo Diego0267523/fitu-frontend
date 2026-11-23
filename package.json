@@ -4,7 +4,10 @@
   "description": "Cliente web y Android (Capacitor) de FitU, app de fitness social",
   "license": "MIT",
   "author": "Diego Camacho",
-  "repository": {"type": "git", "url": "git+https://github.com/Diego0267523/frontend.git"},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diego0267523/frontend.git"
+  },
   "private": true,
   "dependencies": {
     "@capacitor/android": "^8.3.0",
@@ -53,5 +56,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^react-router-dom$": "<rootDir>/node_modules/react-router-dom/dist/index.js",
+      "^react-router/dom$": "<rootDir>/node_modules/react-router/dist/development/dom-export.js",
+      "^react-router$": "<rootDir>/node_modules/react-router/dist/development/index.js",
+      "^axios$": "<rootDir>/node_modules/axios/dist/node/axios.cjs",
+      "^react-markdown$": "<rootDir>/src/testStubs/react-markdown.js",
+      "^remark-gfm$": "<rootDir>/src/testStubs/remark-gfm.js"
+    }
   }
 }

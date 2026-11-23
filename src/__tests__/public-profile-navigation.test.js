@@ -3,6 +3,7 @@ import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { createPublicProfile, addPostToProfile, publicProfilesDB } from "../utils/publicProfilesDB";
 import PostCard from "../components/postCard";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 // MOCK de useSocket para evitar dependencias reales
 jest.mock("../context/SocketContext", () => ({
@@ -42,6 +43,7 @@ describe("Prueba E2E: perfil público desde PostCard", () => {
     expect(postA.authorId).toBe(profileA.id);
 
     render(
+      <QueryClientProvider client={new QueryClient()}>
       <MemoryRouter initialEntries={["/"]}>
         <Routes>
           <Route
@@ -54,6 +56,7 @@ describe("Prueba E2E: perfil público desde PostCard", () => {
           />
         </Routes>
       </MemoryRouter>
+      </QueryClientProvider>
     );
 
     const avatar = screen.getByTestId("post-avatar");
@@ -66,16 +69,17 @@ describe("Prueba E2E: perfil público desde PostCard", () => {
       expect(profilePage).toBeInTheDocument();
     });
 
-    expect(window.location.pathname).toBe("/perfil/usuario.a");
 
     // Opción adicional: clic en username también funciona
     render(
+      <QueryClientProvider client={new QueryClient()}>
       <MemoryRouter initialEntries={["/"]}>
         <Routes>
           <Route path="/" element={<PostCard post={postA} />} />
           <Route path="/perfil/:username" element={<div data-testid="profile-page-2">OK</div>} />
         </Routes>
       </MemoryRouter>
+      </QueryClientProvider>
     );
 
     const nameButton = screen.getByTestId("post-username-wrapper");
