@@ -2,14 +2,14 @@
 
 Cliente web y móvil (Android) de una app de fitness social: feed, stories, perfiles públicos, chat con asistente de IA, mensajes directos y registro de comidas.
 
-[![CI](https://github.com/Diego0267523/frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/Diego0267523/frontend/actions/workflows/ci.yml)
+[![CI](https://github.com/Diego0267523/fitu-frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/Diego0267523/fitu-frontend/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![MUI](https://img.shields.io/badge/Material_UI-7-007FFF?logo=mui&logoColor=white)
 ![Capacitor](https://img.shields.io/badge/Capacitor-Android-119EFF?logo=capacitor&logoColor=white)
 ![React Query](https://img.shields.io/badge/TanStack_Query-5-FF4154?logo=reactquery&logoColor=white)
 
-> Consume la API del repositorio [`gym-app`](https://github.com/Diego0267523/gym-app).
+> Consume la API del repositorio [`fitu-backend`](https://github.com/Diego0267523/fitu-backend).
 
 ## ✨ Características
 
@@ -27,13 +27,13 @@ React 19 · React Router 7 · Material UI 7 · TanStack Query · Framer Motion �
 ## 🚀 Puesta en marcha
 
 ```bash
-git clone https://github.com/Diego0267523/frontend.git
-cd frontend
+git clone https://github.com/Diego0267523/fitu-frontend.git
+cd fitu-frontend
 npm install
 npm start          # http://localhost:3000
 ```
 
-Necesitas la API corriendo (ver [`gym-app`](https://github.com/Diego0267523/gym-app)).
+Necesitas la API corriendo (ver [`fitu-backend`](https://github.com/Diego0267523/fitu-backend)).
 
 ### Scripts
 
